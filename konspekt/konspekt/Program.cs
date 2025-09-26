@@ -180,3 +180,4 @@ else if (favcolour == "kollane")
     Console.WriteLine("seda värvi pole");
 }
 Console.WriteLine("siin su värv (❁´◡`❁)");
+
