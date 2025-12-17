@@ -180,4 +180,62 @@ else if (favcolour == "kollane")
     Console.WriteLine("seda värvi pole");
 }
 Console.WriteLine("siin su värv (❁´◡`❁)");
+/* Meetodid
+meetodid on väljakutsutavad koodijadad. Meetodid teostavad tavaliselt mingeid funktsioone või tegevusi.
+meetodid lasevad programmeerijal taaskasutada ome eelnevalt kirjutatud koodi - write once us many times
+meetodeid on kahte liiki- ühed, mis tagastavad andmeid mingisuguse töö tulemina, ja teised, mis ei tagasta midagi, kuid omavad siiski mingit tegevust
 
+Meetodi signatuur:
+meetodi signatuu koosneb mitmest kindlalt äramääratud omadusest, nendeks on:
+-juurdepääsu modifikaator mis ütleb ära, kust ja kuidas sellele meetodilejuurde pääseda saab
+public- meetod on avalik ja kättesaadav ka teistes klassides peale selle, kus meetod ise asub
+private- meetod on saadav ainult selles klassis, kus meetod ise asub
+protected- meetod on saadaval ainultselles klassis, kus meetod ise asub ja kõikides klassides millen on pärilus sellele klassile
+internal- meetod on saadaval ainult selles klassis ja ainult selles failis.
+võibolla ka pandud static- meetod kuulub selle klassi juurde
+tagastustüüp on modifikaator mis ütleb ära, mis tüüpi andmeid meetod tagasi annab kutsumise asukohta
+andmetüüp mida tagastada võibolla ükskõik milline liht või kombinatsioonandmetüüp, aga kui meetod ei tagasta üldse andmeid
+pannakse selle asemel andmetüübiks "void". kui meetodil on tagastustüüp mis on midagi muud kui void
+on meetodi sees, iga toimiva koodisuuna lõpus, kaitstud sõna "return", return ütleb,et just see, on vaja
+väljakutseasukota tagastada, ning peale returni on muutuja nimi tagastatava infoga. peale return lauset, ei
+teostata mitte ühtegi muud meetodi sisu. return toimib ka kui breakina, lõpetades siis aktiivse meetodi töö
+
+1. tüüpi meetod- ei tagasta midagi
+public static void uusmeetod() //meetodi signatuur, mis omab juurdepääsumodifikaatorit "public", "static"  ütleb et ta on
+selle klassi oma, tagastustüüp "void" ütleb et andmeid meie meetod ei tagasta ning pärast meetodi omadusi on meetodi nimi uusmeetod
+peale mida on sulus, kus parameetreid ei ole
+pärast signatuuri on koodiplokk meetodi koodiga {}
+console.writeline("tere"); antud juhul metod kuvab konsooli sõnumi
+
+2. tüüpi meetod- tagastab väärtuse
+int[] arvutatudarvud = new int[] {3, 67, 420}; töödeldavad andmed, mis asuvad täisarvumassiivis, muutujanimega "arvutatudarvud"
+public static int arvutakokku(int[] arvud)
+meetod, mille signatuuris on juurdepääsumodifikaator public, static ütleb et meetod kuulub siia klassi, tagastustüüp int ütleb,
+et programmis väljakutseasukohta tagastatakse täisarv, peale seda on meetodi nimi "arvutakokku" ning sulgude vahel ootab meetod täisarvumassiivi
+millele pannakse meetodi sees ajutine nimi arvud. Peale signatuuri on koodiplokk {} tehtava koodiga
+int summa = 0; tekitatakse täisarvuandmetüüpi muutuja nimega summa, kuhu esialgu omistatakse arv 0.
+foreach (int  i in arvud) foreach tsükliga käiakse kõik täisarvumassiivi "arvud" arvud läbi
+
+summa += i; ja muutujale summa lisatakse juurde, hetkel käidav element.
+
+return summa; pärast tsükli töö lõppu tagastatakse return käsu abil, muutuja summa sisu.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    */
