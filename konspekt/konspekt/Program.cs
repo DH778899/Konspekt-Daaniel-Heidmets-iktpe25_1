@@ -1254,4 +1254,181 @@ else if (ostusumma < 1)
     //Kui ükski eelnevatest ostusumma kontrolli tingimustest ei kehti, tähendab see  et kasutaja sisestas vale arvu ja programm ei tööta
     //ka omakorda jutumärkide vahel. Jutumärgid tähistavad sõnet.
 
-    
+    namespace meetoditetöö
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+
+    //    {
+    //        Console.WriteLine("Tere kasutaja, mis on teie nimi?");
+    //        string filepath = "C:\\Users\\opilane\\Source\\Repos\\harjutused Henri Hunt\\meetoditetöö\\nimi.txt";
+    //        string nimi = Console.ReadLine();
+    //        File.WriteAllText(filepath, nimi);
+    //        Console.WriteLine("Nimi");
+    //        DisplayThisFile();
+    //        FindWord("henri");
+    //    }
+    //    public static void FindWord(string FindThisWord)
+    //    {
+    //        using (StreamReader readFile = new StreamReader("C: \Users\opilane\Source\Repos\harjutused Henri Hunt\meetoditetöö\nimi.txt") )
+    //        {
+    //            int lnr = 0;
+    //            while (readFile.EndOfStream == false)
+    //            {
+    //                string line = readFile.ReadLine();
+    //                lnr++;
+
+    //                if (line.Contains(FindThisWord) == true)
+    //                {
+    //                    string v = Console.ReadLine(FindThisWord + " leiti reast " + lnr);
+    //                }
+    //            }
+    //            readFile.Close();
+    //        }
+    //    }
+    //    private static void DisplayThisFile()
+    //    {
+    //        string line = "";
+    //        try
+    //        {
+    //            using (
+    //                StreamReader readThisThing = new StreamReader
+    //            ("C:\\Users\\opilane\\Source\\Repos\\harjutused Henri Hunt\\meetoditetöö\\nimi.txt"))
+    //            {
+    //                int LineCount = 0;
+    //                while (readThisThing.EndOfStream == false)
+    //                {
+    //                    LineCount++;
+    //                    line = readThisThing.ReadLine();
+    //                    int pikkus = line.Length;
+    //                    Console.WriteLine(LineCount + " " + line + " . Reapikkus on" + pikkus);
+    //                }
+    //                readThisThing.Close();
+    //            }
+    //        }
+    //        catch (Exception e)
+    //        {
+    //            Console.WriteLine("Ei saa lugeda sellepärast et:" + e.Message);
+    //            throw;
+    //        }
+    //    }
+
+    //}
+    //{
+    //    Console.WriteLine("Tere");
+    //    int[] arvutatavadArvud = new int[] { 2, 3, 4 };
+    //}
+    //public static int ArvutaKokku(int[] arvud)
+    //{
+    //    int summa = 0;
+    //    foreach (int i in arvud)
+    //    {
+    //        summa += i;
+    //    }
+    //    return summa;
+}//Console.WriteLine("Tere kasutaja, mis on sinu nimi?");
+//string nimi = "";
+//nimi += Console.ReadLine();
+//if (nimi != "Nipitiri") 
+//{
+//    Console.WriteLine("Sa pole Nipitiri, ootan ainult Nipitirit.");
+//}
+
+//Console.WriteLine("Tere kasutaja, kas sulle meeldivad tulbid?");
+//string tulbid = "";
+//tulbid = Console.ReadLine();
+//if (tulbid != "jah")
+//{
+//    Console.WriteLine("Mulle ka :) ");
+//}
+//else 
+//{
+//    Console.WriteLine("Sorri mees ma ei saa sinust aru :( ");
+//}
+
+//Console.WriteLine("Tere kasutaja, mitu tundi sa sel nädalal mängisid?");
+//int mängutunnid = 0;
+//mängutunnid = int.Parse(Console.ReadLine());
+//if (mängutunnid == 0)
+//{
+//    Console.WriteLine("Kahju, et sul pole aega mängida.");
+//}
+//else if (mängutunnid < 10 && mängutunnid > 0)
+//{
+//    Console.WriteLine("Mõõdukas mängur oled");
+//}
+//else if (mängutunnid < 20 && mängutunnid > 10)
+//{
+//    Console.WriteLine("Natuke paljuks läheb, kodutööd kannatavad");
+//}
+//else if (mängutunnid < 40 && mängutunnid > 20)
+//{
+//    Console.WriteLine("Liiga palju mängid, kas kooli üldse jõuad?");
+//}
+//else if (mängutunnid < 40)
+//{
+//    Console.WriteLine("Siin peaks juba psühholoog sekkuma");
+//}
+
+//int jalgpalliMäng = 0;
+//Console.WriteLine("Mis su viimase mängu tulemus on?");
+//jalgpalliMäng = int.Parse(Console.ReadLine());
+//switch (jalgpalliMäng)
+//{
+//    case 0:
+//        Console.WriteLine("Pudrujalg oled v?");
+//        break;
+//    case 1:
+//        Console.WriteLine("Täitsa okei");
+//        break;
+//    case 2:
+//        Console.WriteLine("Nu see juba parem");
+//        break;
+//    case 3:
+//        Console.WriteLine("Wow, Messi");
+//        break;
+//    case 4:
+//        Console.WriteLine("Ei tunne sellist numbrit");
+//        break;
+//}
+//string kasutajaNimi = "";
+//do
+//{
+//    Console.WriteLine("Palun sisesta oma kasutajanimi");
+//    kasutajaNimi = Console.ReadLine();
+//} while (kasutajaNimi != "Mihkel");
+//if (kasutajaNimi == "Mihkel")
+//{
+
+//}
+
+
+//int parool = 0;
+//Console.WriteLine("Palun sisestage parool");
+//parool = int.Parse(Console.ReadLine());
+//while (parool > 1000 && parool < 9999)
+//{
+//    Console.WriteLine("Sinu parool sobib");
+//}
+//if (parool < 1000 && parool > 9999)
+//{
+//    Console.WriteLine("Vale parool! Parool peab olma neljakohaline arv");
+//}
+
+
+//int puuviljad = 5;
+//for (int i = 0; i < puuviljad; i++)
+//{
+//    Console.WriteLine(i);
+//}
+
+
+
+
+
+//int[] arvuLoend = { 1, 2, 3, 4, 5 };
+//foreach (var arvInLoend in arvuLoend)
+//{
+//    Console.WriteLine(arvInLoend);
+//}
