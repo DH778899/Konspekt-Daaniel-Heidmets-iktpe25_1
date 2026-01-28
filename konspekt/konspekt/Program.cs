@@ -1549,4 +1549,74 @@ namespace meetoditetöö
 //{
 //    Console.WriteLine(arvInLoend);
 //}
+using System.Reflection.Metadata;
+
+namespace MeetodiTöö
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Tervitus();
+            Arvud();
+            //ArvutaKokku();
+            KasutajaNimi();
+            Kiirus();
+        }
+        public static void Tervitus()
+            {
+            Console.WriteLine("Tere kasutaja");
+            return;
+            }
+        public static void Arvud()
+        {
+            float[] arvutatavadArvud = [1, 50, 10, 15, 20];
+            foreach (var arv in arvutatavadArvud)
+            {
+                Console.WriteLine(arv);
+            }
+            return;
+        }
+        //public static int ArvutaKokku()
+        //{
+        //    int arvud = 0;
+        //    int summa = 0;
+        //    foreach (int i in arvud)
+        //    {
+        //        summa += i;
+        //    }
+        //    return summa;
+        //}
+        public static void KasutajaNimi()
+        {
+            Console.WriteLine("Mis on sinu nimi?");
+            int kasutajaNimi = int.Parse(Console.ReadLine());
+            int vastus = 0;
+            while (kasutajaNimi == 0)
+            {
+                vastus = kasutajaNimi * 1;
+                Console.WriteLine($"Sinu nimes on nii mitu tähte {vastus}");
+            }
+        }
+        public static void Kiirus()
+        {
+            Console.WriteLine("Kui kiiresti läksid?");
+            int kiirus = int.Parse(Console.ReadLine());
+            if (kiirus < 40 && kiirus > 20)
+            {
+                Console.WriteLine("aeglane");
+            }
+            else if (kiirus < 60 && kiirus > 40)
+            {
+                Console.WriteLine("normaalne");
+            }
+            else if (kiirus < 100 && kiirus > 60)
+            {
+                Console.WriteLine("ületasid kiirust");
+            }
+            return;
+        }
+
+    }
+}
 
