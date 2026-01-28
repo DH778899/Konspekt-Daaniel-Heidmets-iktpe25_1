@@ -946,6 +946,38 @@ internal class Program
         }
         return summa; //pärast tsükli töö lõppu tagastakse "return" käsu abil, muutuja summa sisu.
     }
+
+meetodite töö valik 1
+kirjuta program mis omab endas
+1.tervitust (meetodiga)
+2.kokkarvutatavat jörjendit komakohaliste arvudega (isepaned sin arvud)
+komakohalise arvuga muutujat kus jörjendi arvutse tulemus kirjas on mida meetod tagastab
+3.küsitakse kasutajalt tönavanime kus ta elab
+on muutuja kuhu (meetodi abil)pannakse tönavanimes olevate tähtede arv
+see muuruja kuvatakse kasutajale völja main programmis
+4.küsib kasutajalt kui suur summa tal poes löks
+on muutuja kuhu (meetodi abil) pannakse sõnum
+see muutuja kuhu kuvatakse kasutajale völja main programmisja kus on jörgnevad meetodid
+
+1. meetod mille völjakutsel tervitatakse
+2.meetod mis arvutab (lahutades) jörjendis olevad komakohaga arvud kokku ja tagastab komakohaga negatiivse arvu3.meetod loeb kui pikkk tönavanimi on ja tagastab töisarvu
+4.meetod mis ütleb vahemikus sisend on, ja tagastab sõnevöhem kui 0
+vahemik1
+vahemik1
+vahemik2
+vahemik3 sõnum kõigis
+kõikide muude puhul appi milline priiskamine
+
+
+
+
+
+
+
+
+
+
+
     
 }internal class Program
     {
@@ -1620,3 +1652,57 @@ namespace MeetodiTöö
     }
 }
 
+//namespace Meetodid
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            string Tere = "";
+//            while (Tere == "")
+//            {
+//                Console.WriteLine("Tere");
+//                Tere = Console.ReadLine();
+//            }
+//        }
+//    }
+//}
+
+//Console.WriteLine("Tere");
+//Console.WriteLine("Palun kirjuta 5 arvutavat arvu");
+//int[] arvutatavadArvud = new int[] { 2, 3, 4 };
+
+//     static int ArvutaKokku(int[] arvud)
+//{
+//    int summa = 0;
+//    foreach (int i in arvud)
+//    {
+//        summa += i;
+//    }
+//    return summa;
+//}
+
+//namespace Meetodid
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            double komakohagaarv = 9.45d;
+//            Console.WriteLine((int)komakohagaarv);
+//            int roundedarv = (int)Math.Round(komakohagaarv);
+//            Console.WriteLine(roundedarv);
+
+
+//            int arv = 35;
+//            string arvtekstina = arv.ToString();
+//            Console.WriteLine(arvtekstina);
+//            Console.WriteLine(arv);
+//            double arvdouble = 279346559d;
+//            int arvint = 0;
+//            arvint = (int)arvdouble;
+//            double uusdouble = arvint;
+//        }
+//    }
+//}
+meetodid
